@@ -1,0 +1,76 @@
+@use 'colors';
+
+header {
+    height: 8rem;
+    width: 100%;
+}
+
+.headertop {
+    height: 50%;
+    width: 100%;
+    background-color: colors.$zcolor_main;
+
+
+    .headertop_in {
+        max-width: 75rem;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                color: white;
+            }
+
+            h5 {
+                color: white;
+            }
+
+            .phone {
+                width: 1.5rem;
+            }
+
+            .flag_div {
+                background-color: white;
+                border-radius: 10px;
+                width: 4rem;
+                height: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .flag {
+                    width: 2.5rem;
+                    border-radius: 5px;
+                    box-shadow: 1px 2px 1px 2px rgb(226, 224, 224);
+                }
+            }
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+}
+
+.headerbuttom {
+    height: 50%;
+    background-color: rgb(231, 231, 231);
+}

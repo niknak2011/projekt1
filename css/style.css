@@ -1,0 +1,56 @@
+header {
+  height: 8rem;
+  width: 100%;
+}
+
+.headertop {
+  height: 50%;
+  width: 100%;
+  background-color: #ec5e2a;
+}
+.headertop .headertop_in {
+  max-width: 75rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headertop .headertop_in div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.headertop .headertop_in div p {
+  color: white;
+}
+.headertop .headertop_in div h5 {
+  color: white;
+}
+.headertop .headertop_in div .phone {
+  width: 1.5rem;
+}
+.headertop .headertop_in div .flag_div {
+  background-color: white;
+  border-radius: 10px;
+  width: 4rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headertop .headertop_in div .flag_div .flag {
+  width: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px 2px rgb(226, 224, 224);
+}
+
+.headerbuttom {
+  height: 50%;
+  background-color: rgb(231, 231, 231);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
