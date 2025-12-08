@@ -15,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 .headertop .headertop_in div {
   display: flex;
@@ -49,7 +50,79 @@ header {
   height: 50%;
   background-color: rgb(231, 231, 231);
 }
+.headerbuttom .headerbuttom_in {
+  max-width: 75rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in {
+  margin-left: 5rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .navigation {
+  background-color: #ec5e2a;
+  color: white;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in button {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  border-radius: 10px;
+  background-color: white;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in button img {
+  width: 2rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in button p {
+  font-size: 1rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .porsen {
+  width: 3rem;
+  background-color: #ec5e2a;
+  color: white;
+  font-size: 1.5rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .serch_div {
+  flex-grow: 1;
+  max-width: 30rem;
+  border: 1px solid #ec5e2a;
+  border-radius: 10px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .serch_div input {
+  border: 0;
+  width: 100%;
+}
 
+@media (max-width: 955px) {
+  .headertop {
+    display: none;
+  }
+  .navigation {
+    display: none !important;
+  }
+  .porsen {
+    display: none !important;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
