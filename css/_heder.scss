@@ -72,7 +72,7 @@ header {
 }
 
 .headerbuttom {
-    height: 50%;
+    min-height: 50%;
     background-color: rgb(231, 231, 231);
 
     .headerbuttom_in {
@@ -167,5 +167,23 @@ header {
     .porsen {
         display: none !important;
     }
+    button{
+        width: 3rem !important;
+        p {
+            display: none;
+        }
+    }
+    .headerbuttom_in_in{
+        margin-left: 0 !important;
+    }
 
+}
+
+@media (max-width: 573px) {
+    .headerbuttom_in {
+        flex-direction: column;
+    }
+    .main_logo{
+        width: 6rem;
+    }
 }

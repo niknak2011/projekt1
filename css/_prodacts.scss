@@ -1,0 +1,130 @@
+@use 'colors';
+
+.prodacts {
+    height: 90rem;
+    max-width: 75rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    .first_row {
+        height: 23rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        nav {
+            height: 95%;
+            width: 20rem;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px 2px rgb(201, 199, 199);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 1rem;
+
+            div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 0.5rem;
+                gap: 1rem;
+                
+
+                img {
+                    width: 1.5rem;
+                }
+            }
+
+
+        }
+
+        .AD {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+
+            img {
+                width: 14rem;
+                border-radius: 20px;
+            }
+            .long {
+                width: 57rem;
+            }
+            
+        }
+    }
+}
+
+.enather_rows {
+    height: 20rem;
+    width: 100%;
+
+    .scroll_div {
+        overflow-x: scroll;
+        display: flex;
+        gap: 2rem;
+
+
+        div {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 2rem;
+            }
+
+            .main {
+                width: 15rem;
+            }
+
+            .Best_prise {
+                background-color: colors.$zcolor_main;
+                height: 2rem;
+                width: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                color: white;
+            }
+
+            div {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                button {
+                    border: 0;
+                    border-radius: 4px;
+                }
+                
+                .gacvla {
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                .shenaxva {
+                    background-color: colors.$button_color;
+                    max-width: 15rem;
+                    height: 3rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+}
