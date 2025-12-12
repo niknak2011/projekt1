@@ -1,0 +1,66 @@
+.main {
+    width: 75rem;
+    height: 77vh;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+
+    .scroll_div {
+        width: 60%;
+        height: 100%;
+
+        .prodact_name {
+            width: 90%;
+            height: 5rem;
+            border-bottom: 3px solid lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                color: rgb(131, 129, 129);
+            }
+
+
+        }
+
+        .prodact {
+            width: 90%;
+            height: 82%;
+            margin-top: 1rem;
+            overflow-y: scroll;
+            display: flex;
+            gap: 3rem;
+
+            .photo {
+                width: 55%;
+                height: 100%;
+
+                .photo_in {
+                    width: 60%;
+                    overflow-x: scroll;
+                    display: flex;
+
+                    img{
+                        width: 20rem;
+                    }
+
+                }
+            }
+
+            .statistic {
+                width: 40%;
+                min-height: 100%;
+            }
+        }
+
+    }
+
+    .by {
+        background-color: lightgray;
+        width: 40%;
+        height: 25rem;
+        border-radius: 20px;
+    }
+
+}

@@ -140,166 +140,59 @@ header {
     width: 6rem;
   }
 }
-.prodacts {
-  height: 90rem;
-  max-width: 75rem;
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 0;
+.main {
+  width: 75rem;
+  height: 77vh;
   margin: 0 auto;
   margin-top: 2rem;
-}
-.prodacts .first_row {
-  height: 23rem;
-  width: 100%;
   display: flex;
-  align-items: center;
-  gap: 2rem;
 }
-.prodacts .first_row nav {
-  min-height: 95%;
-  width: 20rem;
-  border-radius: 10px;
-  box-shadow: 1px 2px 5px 2px rgb(201, 199, 199);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.prodacts .first_row nav div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgb(230, 230, 230);
-  padding: 0.5rem;
-  gap: 1rem;
-}
-.prodacts .first_row nav div img {
-  max-width: 1.5rem;
-}
-.prodacts .first_row .AD {
+.main .scroll_div {
+  width: 60%;
   height: 100%;
-  width: 100%;
+}
+.main .scroll_div .prodact_name {
+  width: 90%;
+  height: 5rem;
+  border-bottom: 3px solid lightgray;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.main .scroll_div .prodact_name h4 {
+  color: rgb(131, 129, 129);
+}
+.main .scroll_div .prodact {
+  width: 90%;
+  height: 82%;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  display: flex;
   gap: 3rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
 }
-.prodacts .first_row .AD img {
-  width: 14rem;
-  border-radius: 20px;
+.main .scroll_div .prodact .photo {
+  width: 55%;
+  height: 100%;
 }
-.prodacts .first_row .AD .long {
-  width: 57rem;
-}
-.prodacts .enather_rows {
-  min-height: 35rem;
-  max-width: 100%;
-  margin-top: 3rem;
-}
-.prodacts .enather_rows .scroll_div {
+.main .scroll_div .prodact .photo .photo_in {
+  width: 60%;
   overflow-x: scroll;
   display: flex;
-  gap: 4rem;
-  padding: 1rem;
 }
-.prodacts .enather_rows .scroll_div div {
-  max-width: 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.main .scroll_div .prodact .photo .photo_in img {
+  width: 20rem;
 }
-.prodacts .enather_rows .scroll_div div img {
-  max-width: 2rem;
+.main .scroll_div .prodact .statistic {
+  width: 40%;
+  min-height: 100%;
 }
-.prodacts .enather_rows .scroll_div div .main {
-  max-width: 15rem;
-}
-.prodacts .enather_rows .scroll_div div .Best_prise {
-  background-color: #ec5e2a;
-  min-height: 2rem;
-  max-width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  color: white;
-}
-.prodacts .enather_rows .scroll_div div div {
-  min-height: 3rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.prodacts .enather_rows .scroll_div div div button {
-  border: 0;
-  border-radius: 4px;
-}
-.prodacts .enather_rows .scroll_div div div .gacvla {
-  max-width: 3rem;
-  min-height: 3rem;
-}
-.prodacts .enather_rows .scroll_div div div .shenaxva {
-  background-color: rgba(236, 94, 42, 0.7);
-  max-width: 15rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.prodacts .AD_row {
-  overflow-y: scroll;
-  height: 15rem;
-  display: flex;
-  padding: 1rem;
-  gap: 3rem;
+.main .by {
+  background-color: lightgray;
+  width: 40%;
+  height: 25rem;
+  border-radius: 20px;
 }
 
-@media (max-width: 573px) {
-  nav {
-    max-width: 5rem;
-  }
-  nav p {
-    display: none;
-  }
-}
-.kategoriebi {
-  display: flex;
-  flex-direction: column;
-  min-height: 50rem;
-  width: 65rem;
-  margin: 0 auto;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.kategoriebi div {
-  min-height: 15rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-}
-.kategoriebi div .desk {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.kategoriebi div .desk div {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 955px) {
-  .kategoriebi {
-    margin-left: 2rem;
-    max-width: 10rem;
-  }
-  .kategoriebi div {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -308,4 +201,9 @@ header {
 body {
   display: flex;
   flex-direction: column;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body, head {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style1.css.map */

@@ -17,7 +17,7 @@
         gap: 2rem;
 
         nav {
-            height: 95%;
+            min-height: 95%;
             width: 20rem;
             border-radius: 10px;
             box-shadow: 1px 2px 5px 2px rgb(201, 199, 199);
@@ -34,10 +34,10 @@
                 border-bottom: 1px solid rgb(230, 230, 230);
                 padding: 0.5rem;
                 gap: 1rem;
-                
+
 
                 img {
-                    width: 1.5rem;
+                    max-width: 1.5rem;
                 }
             }
 
@@ -57,74 +57,98 @@
                 width: 14rem;
                 border-radius: 20px;
             }
+
             .long {
                 width: 57rem;
             }
-            
+
         }
+    }
+
+
+    .enather_rows {
+        min-height: 35rem;
+        max-width: 100%;
+        margin-top: 3rem;
+
+        .scroll_div {
+            overflow-x: scroll;
+            display: flex;
+            gap: 4rem;
+            padding: 1rem;
+
+
+            div {
+                max-width: 12rem;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                img {
+                    max-width: 2rem;
+                }
+
+                .main {
+                    max-width: 15rem;
+                }
+
+                .Best_prise {
+                    background-color: colors.$zcolor_main;
+                    min-height: 2rem;
+                    max-width: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    color: white;
+                }
+
+                div {
+                    min-height: 3rem;
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+
+                    button {
+                        border: 0;
+                        border-radius: 4px;
+                    }
+
+                    .gacvla {
+                        max-width: 3rem;
+                        min-height: 3rem;
+                    }
+
+                    .shenaxva {
+                        background-color: colors.$button_color;
+                        max-width: 15rem;
+                        height: 3rem;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .AD_row {
+        overflow-y:scroll;
+        height: 15rem;
+        display: flex;
+        padding: 1rem;
+        gap: 3rem;
     }
 }
 
-.enather_rows {
-    height: 20rem;
-    width: 100%;
-
-    .scroll_div {
-        overflow-x: scroll;
-        display: flex;
-        gap: 2rem;
-
-
-        div {
-            width: 15rem;
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 2rem;
-            }
-
-            .main {
-                width: 15rem;
-            }
-
-            .Best_prise {
-                background-color: colors.$zcolor_main;
-                height: 2rem;
-                width: 5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50px;
-                color: white;
-            }
-
-            div {
-                margin-top: 1rem;
-                display: flex;
-                flex-direction: row;
-                gap: 1rem;
-
-                button {
-                    border: 0;
-                    border-radius: 4px;
-                }
-                
-                .gacvla {
-                    width: 3rem;
-                    height: 3rem;
-                }
-
-                .shenaxva {
-                    background-color: colors.$button_color;
-                    max-width: 15rem;
-                    height: 3rem;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                }
-            }
-            
+@media (max-width: 573px) {
+    nav {
+        max-width: 5rem ;
+        p {
+            display: none;
         }
     }
 }
