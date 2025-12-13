@@ -3,11 +3,11 @@
     height: 77vh;
     margin: 0 auto;
     margin-top: 2rem;
-    display: flex;
 
     .scroll_div {
-        width: 60%;
+        width: 40rem;
         height: 100%;
+        display: flex;
 
         .prodact_name {
             width: 90%;
@@ -49,8 +49,18 @@
             }
 
             .statistic {
-                width: 40%;
-                min-height: 100%;
+                background-color: red;
+                width: 50rem;
+                height: 50rem;
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                }
             }
         }
 
@@ -60,7 +70,8 @@
         background-color: lightgray;
         width: 40%;
         height: 25rem;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
 }
+
