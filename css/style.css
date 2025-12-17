@@ -25,8 +25,14 @@ header {
 .headertop .headertop_in div p {
   color: white;
 }
+.headertop .headertop_in div p:hover {
+  color: lightgray;
+}
 .headertop .headertop_in div h5 {
   color: white;
+}
+.headertop .headertop_in div h5:hover {
+  color: lightgray;
 }
 .headertop .headertop_in div .phone {
   width: 1.5rem;
@@ -71,6 +77,9 @@ header {
   background-color: #ec5e2a;
   color: white;
 }
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .navigation:hover {
+  background-color: rgba(236, 94, 42, 0.7);
+}
 .headerbuttom .headerbuttom_in .headerbuttom_in_in button {
   width: 8rem;
   height: 3rem;
@@ -88,11 +97,17 @@ header {
 .headerbuttom .headerbuttom_in .headerbuttom_in_in button p {
   font-size: 1rem;
 }
+.headerbuttom .headerbuttom_in .headerbuttom_in_in button:hover {
+  background-color: lightgray;
+}
 .headerbuttom .headerbuttom_in .headerbuttom_in_in .porsen {
   width: 3rem;
   background-color: #ec5e2a;
   color: white;
   font-size: 1.5rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .porsen:hover {
+  background-color: rgba(236, 94, 42, 0.7);
 }
 .headerbuttom .headerbuttom_in .headerbuttom_in_in .serch_div {
   flex-grow: 1;
@@ -178,6 +193,9 @@ header {
 .prodacts .first_row nav div img {
   max-width: 1.5rem;
 }
+.prodacts .first_row nav div:hover {
+  background-color: lightgray;
+}
 .prodacts .first_row .AD {
   height: 100%;
   width: 100%;
@@ -242,6 +260,9 @@ header {
   max-width: 3rem;
   min-height: 3rem;
 }
+.prodacts .enather_rows .scroll_div div div .gacvla:hover {
+  background-color: lightgray;
+}
 .prodacts .enather_rows .scroll_div div div .shenaxva {
   background-color: rgba(236, 94, 42, 0.7);
   max-width: 15rem;
@@ -249,6 +270,9 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.prodacts .enather_rows .scroll_div div div .shenaxva:hover {
+  background-color: rgb(235, 128, 56);
 }
 .prodacts .AD_row {
   overflow-y: scroll;

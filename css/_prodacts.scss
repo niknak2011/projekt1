@@ -41,6 +41,10 @@
                 }
             }
 
+            div:hover {
+                background-color: lightgray;
+            }
+
 
         }
 
@@ -121,6 +125,10 @@
                         min-height: 3rem;
                     }
 
+                    .gacvla:hover {
+                        background-color: lightgray;
+                    }
+
                     .shenaxva {
                         background-color: colors.$button_color;
                         max-width: 15rem;
@@ -128,6 +136,10 @@
                         display: flex;
                         flex-direction: row;
                         align-items: center;
+                    }
+
+                    .shenaxva:hover {
+                        background-color: rgb(235, 128, 56);
                     }
                 }
 

@@ -145,11 +145,11 @@ header {
   height: 77vh;
   margin: 0 auto;
   margin-top: 2rem;
-  display: flex;
 }
 .main .scroll_div {
-  width: 60%;
+  width: 40rem;
   height: 100%;
+  display: flex;
 }
 .main .scroll_div .prodact_name {
   width: 90%;
@@ -183,14 +183,22 @@ header {
   width: 20rem;
 }
 .main .scroll_div .prodact .statistic {
-  width: 40%;
-  min-height: 100%;
+  background-color: red;
+  width: 50rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.main .scroll_div .prodact .statistic div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .main .by {
   background-color: lightgray;
   width: 40%;
   height: 25rem;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 * {
