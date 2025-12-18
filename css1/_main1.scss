@@ -17,6 +17,13 @@
             width: 100%;
             height: 4rem;
             border-bottom: 2px solid lightgray;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                font-size: 1.2rem;
+            }
         }
 
         .prodactin {
@@ -28,11 +35,29 @@
             .pphoto {
                 height: 100%;
                 width: 55%;
+                
+                p {
+                    font-weight: bold;
+                }
             }
 
             .pdetal {
                 height: 100%;
                 width: 43%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 1rem;
+
+                div{
+                    width: 100%;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    
+                }
             }
         }
     }
@@ -50,4 +75,8 @@
         }
     }
 
+}
+
+.revers {
+    transform: rotate(180deg);
 }

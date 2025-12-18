@@ -174,6 +174,12 @@ header {
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .prodact .pname p {
+  font-size: 1.2rem;
 }
 .main .prodact .prodactin {
   width: 100%;
@@ -185,9 +191,23 @@ header {
   height: 100%;
   width: 55%;
 }
+.main .prodact .prodactin .pphoto p {
+  font-weight: bold;
+}
 .main .prodact .prodactin .pdetal {
   height: 100%;
   width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.main .prodact .prodactin .pdetal div {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .main .by {
   height: 100%;
@@ -200,6 +220,10 @@ header {
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 20px;
+}
+
+.revers {
+  transform: rotate(180deg);
 }
 
 * {
