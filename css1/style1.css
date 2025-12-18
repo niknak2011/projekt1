@@ -25,8 +25,14 @@ header {
 .headertop .headertop_in div p {
   color: white;
 }
+.headertop .headertop_in div p:hover {
+  color: lightgray;
+}
 .headertop .headertop_in div h5 {
   color: white;
+}
+.headertop .headertop_in div h5:hover {
+  color: lightgray;
 }
 .headertop .headertop_in div .phone {
   width: 1.5rem;
@@ -71,6 +77,9 @@ header {
   background-color: #ec5e2a;
   color: white;
 }
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .navigation:hover {
+  background-color: rgba(236, 94, 42, 0.7);
+}
 .headerbuttom .headerbuttom_in .headerbuttom_in_in button {
   width: 8rem;
   height: 3rem;
@@ -88,11 +97,17 @@ header {
 .headerbuttom .headerbuttom_in .headerbuttom_in_in button p {
   font-size: 1rem;
 }
+.headerbuttom .headerbuttom_in .headerbuttom_in_in button:hover {
+  background-color: lightgray;
+}
 .headerbuttom .headerbuttom_in .headerbuttom_in_in .porsen {
   width: 3rem;
   background-color: #ec5e2a;
   color: white;
   font-size: 1.5rem;
+}
+.headerbuttom .headerbuttom_in .headerbuttom_in_in .porsen:hover {
+  background-color: rgba(236, 94, 42, 0.7);
 }
 .headerbuttom .headerbuttom_in .headerbuttom_in_in .serch_div {
   flex-grow: 1;
@@ -141,64 +156,50 @@ header {
   }
 }
 .main {
-  width: 75rem;
-  height: 77vh;
+  width: 73rem;
+  height: 35rem;
   margin: 0 auto;
   margin-top: 2rem;
-}
-.main .scroll_div {
-  width: 40rem;
-  height: 100%;
   display: flex;
-}
-.main .scroll_div .prodact_name {
-  width: 90%;
-  height: 5rem;
-  border-bottom: 3px solid lightgray;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-.main .scroll_div .prodact_name h4 {
-  color: rgb(131, 129, 129);
-}
-.main .scroll_div .prodact {
-  width: 90%;
-  height: 82%;
-  margin-top: 1rem;
-  overflow-y: scroll;
-  display: flex;
-  gap: 3rem;
-}
-.main .scroll_div .prodact .photo {
-  width: 55%;
+.main .prodact {
   height: 100%;
-}
-.main .scroll_div .prodact .photo .photo_in {
-  width: 60%;
-  overflow-x: scroll;
+  width: 63%;
   display: flex;
-}
-.main .scroll_div .prodact .photo .photo_in img {
-  width: 20rem;
-}
-.main .scroll_div .prodact .statistic {
-  background-color: red;
-  width: 50rem;
-  height: 50rem;
-  display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
-.main .scroll_div .prodact .statistic div {
+.main .prodact .pname {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 2px solid lightgray;
+}
+.main .prodact .prodactin {
+  width: 100%;
+  height: 30rem;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+}
+.main .prodact .prodactin .pphoto {
+  height: 100%;
+  width: 55%;
+}
+.main .prodact .prodactin .pdetal {
+  height: 100%;
+  width: 43%;
 }
 .main .by {
+  height: 100%;
+  width: 35%;
+}
+.main .by .by_in {
   background-color: lightgray;
-  width: 40%;
-  height: 25rem;
-  border-radius: 10px;
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 20px;
 }
 
 * {

@@ -1,5 +1,4 @@
 @use 'colors';
-
 header {
     height: 8rem;
     width: 100%;
@@ -31,13 +30,23 @@ header {
                 color: white;
             }
 
+            p:hover {
+                color: lightgray;
+            }
+
             h5 {
                 color: white;
+            }
+
+            h5:hover {
+                color: lightgray;
             }
 
             .phone {
                 width: 1.5rem;
             }
+
+            
 
             .flag_div {
                 background-color: white;
@@ -54,6 +63,10 @@ header {
                     border-radius: 5px;
                     box-shadow: 1px 2px 1px 2px rgb(226, 224, 224);
                 }
+
+                
+            
+            
             }
 
 
@@ -102,6 +115,10 @@ header {
                 
             }
 
+            .navigation:hover {
+                background-color: colors.$button_color;
+            }
+
             button {
                 width: 8rem;
                 height: 3rem;
@@ -124,11 +141,19 @@ header {
                 }
             }
 
+            button:hover{
+                background-color: lightgray;
+            }
+
             .porsen {
                 width: 3rem;
                 background-color: colors.$zcolor_main;
                 color: white;
                 font-size: 1.5rem;
+            }
+
+            .porsen:hover {
+                background-color: colors.$button_color;
             }
 
             .serch_div {
