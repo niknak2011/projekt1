@@ -1,5 +1,7 @@
+@use 'colors';
+
 .main {
-    width: 73rem;
+    max-width: 73rem;
     height: 35rem;
     margin: 0 auto;
     margin-top: 2rem;
@@ -35,7 +37,7 @@
             .pphoto {
                 height: 100%;
                 width: 55%;
-                
+
                 p {
                     font-weight: bold;
                 }
@@ -49,29 +51,150 @@
                 align-items: start;
                 gap: 1rem;
 
-                div{
+                div {
                     width: 100%;
                     height: 2rem;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
 
-                    
+
                 }
             }
         }
     }
-    .by{
-        height: 100%;
-        width: 35%;
+
+    .by {
+        min-height: 100%;
+        width: 37%;
 
         .by_in {
-            background-color: lightgray;
+            background-color: rgb(241, 239, 239);
             width: 90%;
-            height: 60%;
-            margin: 0 auto  ;
+            min-height: 60%;
+            margin: 0 auto;
             margin-top: 2rem;
             border-radius: 20px;
+
+
+            .cost {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px solid white;
+                padding: 1rem;
+
+                h5 {
+                    font-weight: bold;
+                    color: colors.$zcolor_main;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+                height: 40%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 1rem;
+                padding: 1rem;
+                border-bottom: 2px solid white;
+
+                button {
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+
+                    p {
+                        margin-left: 0.5rem;
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                    }
+
+                }
+
+                button:hover {
+                    background-color: lightgray;
+                }
+            }
+
+
+            .buttons_by {
+                margin-top: 1rem;
+                width: 100%;
+                height: 38%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    width: 2rem;
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .shedareba {
+                        border: 0;
+                        border-radius: 10px;
+                        background-color: white;
+                        height: 3rem;
+
+                    }
+
+                    .shedareba:hover {
+                        background-color: lightgray;
+                    }
+
+                    .damateba {
+                        border: 0;
+                        border-radius: 10px;
+                        background-color: colors.$zcolor_main;
+                        color: white;
+                        height: 3rem;
+                    }
+
+                    .damateba:hover {
+                        background-color: colors.$button_color;
+                    }
+                }
+
+                .yidva {
+                    height: 3rem;
+                    width: 100%;
+                    justify-content: center;
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: colors.$zcolor_main;
+
+                    h5 {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                .yidva:hover {
+                    background-color: colors.$button_color;
+                }
+            }
+
         }
     }
 
@@ -79,4 +202,98 @@
 
 .revers {
     transform: rotate(180deg);
+}
+
+
+
+@media (min-width: 830px) {
+    footer {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 1152px) {
+    .by {
+        width: 20rem !important;
+
+
+    }
+
+    .main .by .by_in .buttons {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 830px) {
+    .by {
+        display: none !important;
+    }
+
+    .prodact {
+        width: 100% !important;
+    }
+
+    .prodactin {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .m {
+        display: none !important;
+    }
+
+}
+
+footer {
+    background-color: colors.$zcolor_main;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        h6 {
+            color: colors.$zcolor_main;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    button {
+        height: 2.5rem;
+        min-width: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border: 0;
+        border-radius: 10px;
+        background-color: white;
+
+
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    button:hover {
+        background-color: lightgray;
+    }
 }
